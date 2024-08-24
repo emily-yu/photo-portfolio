@@ -6,6 +6,7 @@ import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/app/_components/tracing-beam";
+import { FloatingNav } from "@/app/_components/floating-navbar";
 
 import "./globals.css";
 
@@ -24,6 +25,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const navItems = [
+    {
+      name: "Home",
+      link: "/",
+      // icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "About",
+      link: "/about",
+      // icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+      // icon: (
+        // <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      // ),
+    },
+  ];
   return (
     <html lang="en">
       <head>
@@ -62,7 +82,8 @@ export default function RootLayout({
       <body
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
       >
-        <ThemeSwitcher />
+        {/* <ThemeSwitcher /> */}
+        <FloatingNav navItems={navItems} />
         <TracingBeam>
         <div className="min-h-screen">{children}</div>
         </TracingBeam>

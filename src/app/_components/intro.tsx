@@ -11,7 +11,8 @@ export function Intro() {
         {/* <TracingBeam> */}
 
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h2 className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
+      {/* <h2> className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8"> */}
+      <h2 className="text-5xl font-bold">
         Emily Yu
       </h2>
     </section>
@@ -26,12 +27,12 @@ export function Intro() {
         </a>{" "}
         and {CMS_NAME}. */}
       </h4>
-
+{/* 
     <section style={{backgroundColor:"lightblue", marginTop: "50px", marginBottom: "50px"}}>
       <h1>image gallery here</h1>
-    </section>
+    </section> */}
     
-    <section>
+    {/* <section>
 
     </section>
     <section className="back">
@@ -62,7 +63,7 @@ export function Intro() {
 
     <section>
 
-    </section>
+    </section> */}
 
     <section>
           <AppleCardsCarouselDemo/>
