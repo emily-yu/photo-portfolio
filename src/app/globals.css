@@ -2,7 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@media only screen and (max-width: 768px) {
+    .topcorner-absolute {
+        padding-bottom: 5%;
+        text-align: center;
+    }
+    .botcorner-absolute {
+        padding-top: 5%;
+        text-align: center;
+    }
+    .main-container {
+        margin-left: 0;
+    }
+    .single-icon-container { /*default styling*/
+        margin-left: -0px;
+      }
+}
+@media only screen and (min-width: 768px) {
+    .cont {
+        position: relative;
+        width: 100%;
+    }
+    .topcorner-absolute {
+        position: absolute;
+        right: 15%;
+        text-align: right;
+    }
+    .botcorner-absolute {
+        position: relative;
+        text-align: left;
+        bottom: 10%;
+    }
 
+    .main-container {
+        height: fit-content;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        margin-left: 100px;
+      }
+      .single-icon-container { /*default styling*/
+        margin-left: -75px;
+      }
+}
 .image-stack {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -27,19 +68,16 @@
     grid-row: 1;
   }
 
-  .main-container {
-    height: fit-content;
-    padding-top: 3rem;
-    margin-left: 100px
+  .back {
+    background-color: lightblue;
+    height: 40%;
   }
+
   
   #icons-container {
     display: flex;
     position: relative;
     justify-content: center;
-  }
-  .single-icon-container { /*default styling*/
-    margin-left: -75px;
   }
   #two {
     margin-top: 10%;

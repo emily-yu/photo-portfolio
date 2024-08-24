@@ -27,17 +27,18 @@ export function Intro() {
     </section>
     
     <section>
-      <div>
-        <p>Riaan New Jersey Open</p>
-        <p>USAB Sanctioned Event</p>
-        <p>New Jersey Badminton Club | Montville, NJ</p>
-      </div>
-    </section>
 
+    </section>
+    <section className="back">
     <div className="main-container">
+        <div className="topcorner-absolute">
+          <p>Bay Badminton Championships</p>
+          <p>USAB Sanctioned Event</p>
+          <p>Bay Badminton Center | Milpitas, CA</p>
+        </div>
         <div id="icons-container">
             <div className="single-icon-container" id="one">
-            <Image width={400} height={400} src="/assets/middle1.png" alt=""/>
+            <Image width={400} height={500} src="/assets/middle1.png" alt=""/>
             </div>
             <div className="single-icon-container" id="two">
             <Image width={900} height={500} src="/assets/middle2.jpg" alt=""/>
@@ -46,14 +47,16 @@ export function Intro() {
             <Image width={600} height={500} src="/assets/middle3.jpg" alt=""/>
             </div>
         </div>
+        <div className="botcorner-absolute">
+          <p>Riaan New Jersey Open</p>
+          <p>USAB Sanctioned Event</p>
+          <p>New Jersey Badminton Club | Montville, NJ</p>
+        </div>
     </div>
+    </section>
 
     <section>
-      <div>
-        <p>Bay Badminton Championships</p>
-        <p>USAB Sanctioned Event</p>
-        <p>Bay Badminton Center | Milpitas, CA</p>
-      </div>
+
     </section>
 
     <section style={{display:"flex"}}>
