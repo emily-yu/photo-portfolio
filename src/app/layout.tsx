@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
 import { ThemeSwitcher } from "./_components/theme-switcher";
+import { twMerge } from "tailwind-merge";
+import { TracingBeam } from "@/app/_components/tracing-beam";
 
 import "./globals.css";
 
@@ -61,7 +63,9 @@ export default function RootLayout({
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
       >
         <ThemeSwitcher />
+        <TracingBeam>
         <div className="min-h-screen">{children}</div>
+        </TracingBeam>
         <Footer />
       </body>
     </html>

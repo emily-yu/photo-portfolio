@@ -8,11 +8,14 @@ import { Carousel, Card } from "./apple-cards-carousel";
 export function Intro() {
   return (
     <>
+        {/* <TracingBeam> */}
+
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
+      <h2 className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
         Emily Yu
-      </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
+      </h2>
+    </section>
+    <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         {/* A statically generated blog example using{" "} */}
         As an athlete turned photographer, I see with the players.
         {/* <a
@@ -23,7 +26,6 @@ export function Intro() {
         </a>{" "}
         and {CMS_NAME}. */}
       </h4>
-    </section>
 
     <section style={{backgroundColor:"lightblue", marginTop: "50px", marginBottom: "50px"}}>
       <h1>image gallery here</h1>
@@ -90,6 +92,7 @@ export function Intro() {
     <section>
           {/* <AppleCardsCarouselDemo/> */}
     </section>
+    {/* </TracingBeam> */}
     </>
   );
 }
@@ -113,20 +116,17 @@ export function AppleCardsCarouselDemo() {
 const DummyContent = () => {
   return (
     <>
-      {[...new Array(3).fill(1)].map((_, index) => {
-        return (
+      {/* {[...new Array(3).fill(1)].map((_, index) => { */}
+        {/* return ( */}
           <div
-            key={"dummy-content" + index}
+            // key={"dummy-content" + index}
             className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
           >
             <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule of Apple club is that you boast about Apple club.
+                In collaboration with Seattle Badminton Club.
               </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
+              beep bope
             </p>
             <Image
               src="/assets/middle1.png"
@@ -136,8 +136,8 @@ const DummyContent = () => {
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
             />
           </div>
-        );
-      })}
+        {/* ); */}
+      {/* })} */}
     </>
   );
 };
