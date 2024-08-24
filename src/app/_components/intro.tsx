@@ -1,4 +1,5 @@
 import { CMS_NAME } from "@/lib/constants";
+import classNames from "classnames";
 import Image from 'next/image'
 
 export function Intro() {
@@ -32,11 +33,21 @@ export function Intro() {
         <p>New Jersey Badminton Club | Montville, NJ</p>
       </div>
     </section>
-    <section style={{display:"flex"}}>
-      <Image src="/assets/middle1.png" width={500} height={500} alt=""/>
-      <Image src="/assets/middle2.jpg" width={500} height={500} alt=""/>
-      <Image src="/assets/middle3.jpg" width={500} height={500} alt=""/>
-    </section>
+
+    <div className="main-container">
+        <div id="icons-container">
+            <div className="single-icon-container" id="one">
+            <Image width={400} height={400} src="/assets/middle1.png" alt=""/>
+            </div>
+            <div className="single-icon-container" id="two">
+            <Image width={900} height={500} src="/assets/middle2.jpg" alt=""/>
+            </div>
+            <div className="single-icon-container" id="three">
+            <Image width={600} height={500} src="/assets/middle3.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+
     <section>
       <div>
         <p>Bay Badminton Championships</p>
