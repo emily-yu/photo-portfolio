@@ -20,7 +20,7 @@ export function Gallery() {
         </div>
         </div>
         </section>
-        <div id="gallerycontainer">
+        <div className="gallerycontainer">
         <ParallaxScroll images={images} />   
 
         </div>
