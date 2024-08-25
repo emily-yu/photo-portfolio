@@ -225,3 +225,22 @@
 .image-slider .prev:hover, .image-slider .next:hover {
   background: rgba(0, 0, 0, 0.7);
 }
+
+
+.headertext {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.headersection {
+  /* margin: 10px; */
+  display: flex;
+  align-items: center;;
+  justify-content: center;
+}
+
+section {
+  margin-left: 10%;
+  margin-right: 10%;
+
+}

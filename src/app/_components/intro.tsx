@@ -4,8 +4,12 @@ import { CMS_NAME } from "@/lib/constants";
 import classNames from "classnames";
 import Image from 'next/image'
 import { Carousel, Card } from "./apple-cards-carousel";
+import MyAccordion from "./mui-accordion";
 import { useRef } from "react";
 // src/app/_components/ui/apple-cards-carousel.tsx
+import Stack from '@mui/material/Stack';
+
+
 export function Intro() {
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -29,28 +33,20 @@ export function Intro() {
     <>
         {/* <TracingBeam> */}
 
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      {/* <h2> className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8"> */}
-      <h2 className="text-5xl font-bold">
-        Emily Yu
-      </h2>
-      
-    </section>
-    <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        {/* A statically generated blog example using{" "} */}
-        As an athlete turned photographer, I see with the players.
-        {/* <a
-          href="https://nextjs.org/"
-          className="underline hover:text-blue-600 duration-200 transition-colors"
-        >
-          Next.js
-        </a>{" "}
-        and {CMS_NAME}. */}
-      </h4>
-      <div>
-    <a href="/login">Login</a>
-    <a href="/contact">Contact</a>
-  </div>
+    <section>
+    <div style={{textAlign: "center", padding: "5%"}}>
+
+      <h2 className="text-5xl font-bold">Emily Yu</h2>
+      <div style={{textAlign: "center"}}>
+        <div>
+          <a href="/login">Login</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">As an athlete turned photographer, I see with the players.</h4>
+        </div>
+        </div>
+        </section>
+    
 {/* 
     <section style={{backgroundColor:"lightblue", marginTop: "50px", marginBottom: "50px"}}>
       <h1>image gallery here</h1>
@@ -122,11 +118,12 @@ export function Intro() {
 
     <section style={{display:"flex"}}>
       {/* a expand */}
-      <div>
-        <Image src="/assets/middle1.png" width={100} height={100} alt=""/>
-        <h1>2022</h1>
-        <p>UW Husky Open, Dave Freeman, UCI Anteater Collegiate, Riaan NJ Open, UC Davis Spring Open, UC Berkeley LXVI, UCLA Bruin Open, Bay Badminton Championships</p>
-      </div>
+      <Stack>
+            <img src="/assets/middle1.png" alt="Image 1" />
+            <MyAccordion/>
+
+          </Stack>
+      
 
       {/* info section */}
       <div style={{padding: "50px", backgroundColor: "lightgrey"}}>
