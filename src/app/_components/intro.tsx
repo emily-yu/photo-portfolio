@@ -44,7 +44,9 @@ export function Intro() {
         {/* <a href="/login">Login</a> */}
         <a href="/gallery">Gallery</a>
         <a href="/events">Events</a>
-        <a href="/contact">Contact</a>
+        {/* <a href="/contact">Contact</a> */}
+        <a href="" style={{textDecoration: "line-through"}}>Clients</a>
+
         </div>
         {/* <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">As an athlete turned photographer, I see with the players.</h4> */}
         <Blockquote>

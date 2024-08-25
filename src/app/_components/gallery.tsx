@@ -15,7 +15,8 @@ export function Gallery() {
         {/* <a href="/login">Login</a> */}
         <a href="/gallery">Gallery</a>
         <a href="/events">Events</a>
-        <a href="/contact">Contact</a>
+        {/* <a href="/contact">Contact</a> */}
+        <a href="" style={{textDecoration: "line-through"}}>Clients</a>
         </div>
         <Blockquote>
       <svg

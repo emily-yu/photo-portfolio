@@ -34,6 +34,7 @@ export function Contact() {
         </section>
     
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+        <div className="greyout">
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
         Client Portal
       </h2>
@@ -113,9 +114,10 @@ export function Contact() {
           </button> */}
         </div>
       </form>
+      </div>
     </div>
     <section style={{padding: "5%"}}>
-        {/* <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">Client access coming soon!</h4> */}
+        <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">Client access coming soon!</h4>
     </section>
     </>
   );
