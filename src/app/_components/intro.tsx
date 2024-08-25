@@ -46,7 +46,19 @@ export function Intro() {
         <a href="/events">Events</a>
         <a href="/contact">Contact</a>
         </div>
-        <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">As an athlete turned photographer, I see with the players.</h4>
+        {/* <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">As an athlete turned photographer, I see with the players.</h4> */}
+        <Blockquote>
+      <svg
+        className="mb-4 h-8 w-8 text-gray-400 dark:text-gray-600"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 18 14"
+      >
+        <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+      </svg>
+      As an athlete turned photographer, I see with the players.
+    </Blockquote>
         </div>
         </div>
         </section>
@@ -83,22 +95,22 @@ export function Intro() {
       <div className="wrapper">
         <div className="image-container" ref={containerRef}>
           <div className="image">
-            <img src="/assets/middle1.png" alt="Image 1" />
+            <img src="/assets/head/1.jpg" alt="Image 1" />
           </div>
           <div className="image">
-            <img src="/assets/middle2.jpg" alt="Image 2" />
+            <img src="/assets/head/2.jpg" alt="Image 2" />
           </div>
           <div className="image">
-            <img src="/assets/middle3.jpg" alt="Image 3" />
+            <img src="/assets/head/3.jpg" alt="Image 3" />
           </div>
           <div className="image">
-            <img src="/assets/middle3.jpg" alt="Image 3" />
+            <img src="/assets/head/4.jpg" alt="Image 3" />
           </div>
           <div className="image">
-            <img src="/assets/middle3.jpg" alt="Image 3" />
+            <img src="/assets/head/5.jpg" alt="Image 3" />
           </div>
           <div className="image">
-            <img src="/assets/middle3.jpg" alt="Image 3" />
+            <img src="/assets/head/6.jpg" alt="Image 3" />
           </div>
           {/* Add more images here */}
         </div>
