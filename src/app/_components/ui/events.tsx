@@ -185,12 +185,12 @@ const data = [
     src: "/assets/card/bbc23.jpg",
     // content: <DummyContent />,
   },
-  {
-    category: "Berkeley, CA",
-    title: "Golden Bear XVII",
-    src: "/assets/card/berk23.jpg",
-    // content: <DummyContent />,
-  },
+  // {
+  //   category: "Berkeley, CA",
+  //   title: "Golden Bear XVII",
+  //   src: "/assets/card/berk23.jpg",
+  //   // content: <DummyContent />,
+  // },
   {
     category: "Los Angeles, CA",
     title: "UCLA Spring Open 2023",
