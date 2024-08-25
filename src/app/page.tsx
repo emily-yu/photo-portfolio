@@ -1,17 +1,17 @@
-import Container from "@/app/_components/container";
-import { HeroPost } from "@/app/_components/hero-post";
-import { Intro } from "@/app/_components/intro";
-import { MoreStories } from "@/app/_components/more-stories";
-import { getAllPosts } from "@/lib/api";
+import Container from "@/app/_components/ui/container";
+// import { HeroPost } from "@/app/_components/hero-post";
+import { Intro } from "@/app/_components/ui/intro";
+// import { MoreStories } from "@/app/_components/more-stories";
+// import { getAllPosts } from "@/lib/api";
 
-import RiaanOpen from "@/app/_components/events/riaanopen";
+// import RiaanOpen from "@/app/_components/events/riaanopen";
 
 export default function Index() {
-  const allPosts = getAllPosts();
+  // const allPosts = getAllPosts();
 
-  const heroPost = allPosts[0];
+  // const heroPost = allPosts[0];
 
-  const morePosts = allPosts.slice(1);
+  // const morePosts = allPosts.slice(1);
 
   return (
     <main>

@@ -1,11 +1,10 @@
-import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
+import Footer from "@/app/_components/ui/footer";
+// import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
-import { ThemeSwitcher } from "./_components/theme-switcher";
 import { twMerge } from "tailwind-merge";
-import { TracingBeam } from "@/app/_components/tracing-beam";
+import { TracingBeam } from "@/app/_components/ui/tracing-beam";
 // import { FloatingNav } from "@/app/_components/floating-navbar";
 
 import "./globals.css";
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
   title: `Emily Yu | Photography`,
   description: `As an athlete turned photographer, I see with the players.`,
   openGraph: {
-    images: [HOME_OG_IMAGE_URL],
+    // images: [HOME_OG_IMAGE_URL],
   },
 };
 

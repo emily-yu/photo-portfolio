@@ -1,5 +1,5 @@
-import Container from "@/app/_components/container";
-import { EXAMPLE_PATH } from "@/lib/constants";
+import Container from "@/app/_components/ui/container";
+// import { EXAMPLE_PATH } from "@/lib/constants";
 
 export function Footer() {
   return (
@@ -21,14 +21,14 @@ export function Footer() {
             >
               {/* Contact */}
             </a>
-            <a
+            {/* <a
               href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
               className="mx-3 font-bold hover:underline"
-            >
+            > */}
               {/* Socials */}
              
               
-            </a>
+            {/* </a> */}
           </div>
         </div>
       </Container>

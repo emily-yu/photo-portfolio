@@ -1,6 +1,6 @@
 "use client";
 
-import { CMS_NAME } from "@/lib/constants";
+// import { CMS_NAME } from "@/lib/constants";
 import classNames from "classnames";
 import Image from 'next/image'
 import { Carousel, Card } from "./apple-cards-carousel";
