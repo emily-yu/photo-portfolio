@@ -107,7 +107,7 @@ export function Intro() {
     <section style={{display:"flex"}}>
       {/* a expand */}
       <Stack>
-            <img src="/assets/middle1.png" alt="Image 1" />
+            <img src="/assets/me.jpg" alt="Image 1" />
             <MyAccordion/>
 
           </Stack>
