@@ -47,6 +47,10 @@
       .single-icon-container { /*default styling*/
         margin-left: -75px;
       }
+      .asdf{
+        margin-left: 0px;
+        margin-right: 0px;
+      }
 }
 
 .image-stack {

@@ -34,6 +34,7 @@ export function Intro() {
       <h2 className="text-5xl font-bold">
         Emily Yu
       </h2>
+      
     </section>
     <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         {/* A statically generated blog example using{" "} */}
@@ -46,6 +47,10 @@ export function Intro() {
         </a>{" "}
         and {CMS_NAME}. */}
       </h4>
+      <div>
+    <a href="/login">Login</a>
+    <a href="/contact">Contact</a>
+  </div>
 {/* 
     <section style={{backgroundColor:"lightblue", marginTop: "50px", marginBottom: "50px"}}>
       <h1>image gallery here</h1>
@@ -248,10 +253,10 @@ const ImageSlider: React.FC = () => {
 
   return (
     <div className="main">
-      <h1 className="title">Scrolling Image Slider</h1>
+      {/* <h1 className="title">Scrolling Image Slider</h1> */}
       <div className="wrapper">
         <button className="prev" onClick={() => scroll(-1)}>&#10094;</button>
-        <div className="image-container" ref={containerRef}>
+        <div className="image-container asdf" ref={containerRef}>
           {[...Array(10)].map((_, index) => (
             <div className="image" key={index}>{index + 1}</div>
           ))}
