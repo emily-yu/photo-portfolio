@@ -31,11 +31,11 @@ export default function RootLayout({
       link: "/",
       // icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
-    {
-      name: "About",
-      link: "/about",
-      // icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
+    // {
+    //   name: "About",
+    //   link: "/about",
+    //   // icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    // },
     {
       name: "Events",
       link: "/events",
