@@ -90,7 +90,8 @@ export default function RootLayout({
         {/* <ThemeSwitcher /> */}
         <FloatingNav navItems={navItems} />
         {/* <TracingBeam> */}
-        <div className="min-h-screen">{children}</div>
+        {/* <div className="min-h-screen">{children}</div> */}
+        <div>{children}</div>
         {/* </TracingBeam> */}
         <Footer />
       </body>

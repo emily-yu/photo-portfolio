@@ -105,25 +105,28 @@ export function Intro() {
       <button className="next" onClick={() => scroll(1)}>&#10095;</button>
     </div>
 
-    <section style={{display:"flex", padding: "50px"}} className="gallerycontainer">
+    <section className="profile_container gallerycontainer">
       {/* a expand */}
       <Stack>
-            <img src="/assets/me.jpg" alt="Image 1" style={{marginBottom: "10px"}}></img>
+            <img className="profileImage" src="/assets/me.jpg" alt="Image 1" style={{marginBottom: "10px"}}></img>
             <MyAccordion/>
 
           </Stack>
       
 
       {/* info section */}
-      <div style={{padding: "75px"}} className="gallerycontainer"> {/*, backgroundColor: "lightgrey"}}>*/}
+      <Stack id="aboutMe" className="gallerycontainer"> {/*, backgroundColor: "lightgrey"}}>*/}
         <p>My badminton journey began at Synergy Badminton Academy in Menlo Park. As an adult, my love for the game has guided me back to a place that I love and to this day, I continue competing while giving back to the community I love. </p>
         <p>I started taking photos in my spare time at tournaments while competing but it quickly grew into something more than that. Since then, I’ve worked with USAB events and shot for  10+ tournaments across the States, from the Bay Badminton Championships in Milpitas, CA to the Riaan New Jersey Open in New Jersey, NJ.</p>
-        <h3>“It may be a hobby for you, but it is memories for us.”</h3>
+      {/* </div>
+      <div> */}
+        <p className="quote">“It may be a hobby for you, but it is memories for us.”</p>
+
         <p>If you’re running a tournament, I’d love to work with you to capture your moments.</p>
         <p>I look forward to hearing from you - for projects, for feedback, or even just to talk badminton.</p>
         <p>emilyyu1030[at]gmail[dot]com</p>
         <p>Portfolio @ Facebook / Contact @ Instagram </p>
-      </div>
+      </Stack>
     </section>
 
 

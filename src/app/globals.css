@@ -21,6 +21,13 @@
     .single-icon-container { /*default styling*/
         margin-left: -0px;
       }
+      .profile_container {
+        display: block;
+        padding: 25px;
+      }
+      #aboutMe {
+        padding-top: 75px;
+      }
 }
 @media only screen and (min-width: 768px) {
     .cont {
@@ -50,6 +57,14 @@
       .asdf{
         margin-left: 0px;
         margin-right: 0px;
+      }
+
+      .profile_container {
+        display: flex;
+        padding: 50px;
+      }
+      #aboutMe {
+        padding-left: 75px;
       }
 }
 
@@ -95,7 +110,14 @@
   #three {
     margin-top: 30%;
   }
-
+  .profileImage {
+    /* .img-circle{ */
+      /* height: 100px; */
+      /* max-width: 100px; */
+      border-radius: 10%;
+      object-fit: cover;
+   /* } */
+  }
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -265,4 +287,15 @@ section {
   100% {
       opacity: 1;
   }
+}
+
+p + p {
+  margin-bottom: 20px;
+}
+.quote {
+  font-size: 23px;
+}
+
+p {
+  font-size: 16px;
 }
