@@ -40,7 +40,7 @@ export function Intro() {
       <div style={{textAlign: "center"}}>
       <div>
         <a href="/login">Login</a>
-        <a href="/about">About</a>
+        <a href="/gallery">Gallery</a>
         <a href="/events">Events</a>
         <a href="/contact">Contact</a>
         </div>
@@ -49,15 +49,8 @@ export function Intro() {
         </div>
         </section>
     
-{/* 
-    <section style={{backgroundColor:"lightblue", marginTop: "50px", marginBottom: "50px"}}>
-      <h1>image gallery here</h1>
-    </section> */}
-    
-    {/* <section>
-
-    </section>
-    <section className="back">
+    {/* todo */}
+    {/* <section className="back">
     <div className="main-container">
         <div className="topcorner-absolute">
           <p>Bay Badminton Championships</p>
@@ -81,11 +74,8 @@ export function Intro() {
           <p>New Jersey Badminton Club | Montville, NJ</p>
         </div>
     </div>
-    </section>
-
-    <section>
-
     </section> */}
+
    <div className="image-slider">
       <button className="prev" onClick={() => scroll(-1)}>&#10094;</button>
       <div className="wrapper">
@@ -114,7 +104,26 @@ export function Intro() {
       <button className="next" onClick={() => scroll(1)}>&#10095;</button>
     </div>
 
+    <section style={{display:"flex"}}>
+      {/* a expand */}
+      <Stack>
+            <img src="/assets/middle1.png" alt="Image 1" />
+            <MyAccordion/>
 
+          </Stack>
+      
+
+      {/* info section */}
+      <div style={{padding: "50px", backgroundColor: "lightgrey"}}>
+        <p>My badminton journey began at Synergy Badminton Academy in Menlo Park. As an adult, my love for the game has guided me back to a place that I love and to this day, I continue competing while giving back to the community I love. </p>
+        <p>I started taking photos in my spare time at tournaments while competing but it quickly grew into something more than that. Since then, I’ve worked with USAB events and shot for  10+ tournaments across the States, from the Bay Badminton Championships in Milpitas, CA to the Riaan New Jersey Open in New Jersey, NJ.</p>
+        <h3>“It may be a hobby for you, but it is memories for us.”</h3>
+        <p>If you’re running a tournament, I’d love to work with you to capture your moments.</p>
+        <p>I look forward to hearing from you - for projects, for feedback, or even just to talk badminton.</p>
+        <p>emilyyu1030[at]gmail[dot]com</p>
+        <p>Portfolio @ Facebook / Contact @ Instagram </p>
+      </div>
+    </section>
 
 
     {/* </TracingBeam> */}
