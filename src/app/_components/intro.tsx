@@ -4,8 +4,27 @@ import { CMS_NAME } from "@/lib/constants";
 import classNames from "classnames";
 import Image from 'next/image'
 import { Carousel, Card } from "./apple-cards-carousel";
+import { useRef } from "react";
 // src/app/_components/ui/apple-cards-carousel.tsx
 export function Intro() {
+
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: number) => {
+    if (containerRef.current) {
+      // Find the first image to get its width
+      const firstImage = containerRef.current.querySelector('.image');
+      if (firstImage) {
+        const imageWidth = (firstImage as HTMLDivElement).offsetWidth;
+        // Calculate the scroll amount
+        const scrollAmount = imageWidth * direction;
+        containerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    }
+  };
+
+
+
   return (
     <>
         {/* <TracingBeam> */}
@@ -64,6 +83,33 @@ export function Intro() {
     <section>
 
     </section> */}
+   <div className="image-slider">
+      <button className="prev" onClick={() => scroll(-1)}>&#10094;</button>
+      <div className="wrapper">
+        <div className="image-container" ref={containerRef}>
+          <div className="image">
+            <img src="/assets/middle1.png" alt="Image 1" />
+          </div>
+          <div className="image">
+            <img src="/assets/middle2.jpg" alt="Image 2" />
+          </div>
+          <div className="image">
+            <img src="/assets/middle3.jpg" alt="Image 3" />
+          </div>
+          <div className="image">
+            <img src="/assets/middle3.jpg" alt="Image 3" />
+          </div>
+          <div className="image">
+            <img src="/assets/middle3.jpg" alt="Image 3" />
+          </div>
+          <div className="image">
+            <img src="/assets/middle3.jpg" alt="Image 3" />
+          </div>
+          {/* Add more images here */}
+        </div>
+      </div>
+      <button className="next" onClick={() => scroll(1)}>&#10095;</button>
+    </div>
 
     <section>
           <AppleCardsCarouselDemo/>
@@ -187,3 +233,31 @@ const data = [
     content: <DummyContent />,
   },
 ];
+
+
+const ImageSlider: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: number) => {
+    if (containerRef.current) {
+      const far = containerRef.current.offsetWidth / 2 * direction;
+      const pos = containerRef.current.scrollLeft + far;
+      containerRef.current.scrollTo({ left: pos, behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <div className="main">
+      <h1 className="title">Scrolling Image Slider</h1>
+      <div className="wrapper">
+        <button className="prev" onClick={() => scroll(-1)}>&#10094;</button>
+        <div className="image-container" ref={containerRef}>
+          {[...Array(10)].map((_, index) => (
+            <div className="image" key={index}>{index + 1}</div>
+          ))}
+        </div>
+        <button className="next" onClick={() => scroll(1)}>&#10095;</button>
+      </div>
+    </div>
+  );
+};

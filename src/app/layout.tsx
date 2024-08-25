@@ -37,6 +37,11 @@ export default function RootLayout({
       // icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
+      name: "Events",
+      link: "/about",
+      // icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
       name: "Contact",
       link: "/contact",
       // icon: (
@@ -84,9 +89,9 @@ export default function RootLayout({
       >
         {/* <ThemeSwitcher /> */}
         <FloatingNav navItems={navItems} />
-        <TracingBeam>
+        {/* <TracingBeam> */}
         <div className="min-h-screen">{children}</div>
-        </TracingBeam>
+        {/* </TracingBeam> */}
         <Footer />
       </body>
     </html>
