@@ -244,3 +244,11 @@ section {
   margin-right: 10%;
 
 }
+
+#nav {
+  display: flex;
+  justify-content: center;
+}
+#nav > a {
+  padding: 10px;
+}

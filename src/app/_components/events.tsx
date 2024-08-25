@@ -38,24 +38,32 @@ export function Events() {
 
       <h2 className="text-5xl font-bold">Emily Yu</h2>
       <div style={{textAlign: "center"}}>
-        <div>
+        <div id="nav">
         <a href="/login">Login</a>
         <a href="/gallery">Gallery</a>
         <a href="/events">Events</a>
         <a href="/contact">Contact</a>
         </div>
-        <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">As an athlete turned photographer, I see with the players.</h4>
+        <div>
+          <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">As an athlete turned photographer, I see with the players.</h4>
+        </div>
+        {/* <div>
+          <h2 className="text-center text-xl md:text-left text-lg mt-5 md:pl-8">Interested in working together? Let's get in contact.</h2>
+        </div> */}
         </div>
         </div>
         </section>
     
 
     {/* extra image galery 2 */}
-    <section>
+    {/* <section> */}
           <AppleCardsCarouselDemo/>
+    {/* </section> */}
+
+    <section style={{padding: "10%", marginTop: "-15%"}}>
+       <h2 className="text-center text-xl md:text-left text-lg mt-5 md:pl-8">Interested in working together? Let's get in contact.</h2>
     </section>
 
-    <p>interested in workin together bud? CONTACT me here</p>
 
     {/* </TracingBeam> */}
     </>

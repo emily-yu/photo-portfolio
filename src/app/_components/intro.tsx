@@ -38,7 +38,7 @@ export function Intro() {
 
       <h2 className="text-5xl font-bold">Emily Yu</h2>
       <div style={{textAlign: "center"}}>
-      <div>
+      <div id="nav">
         <a href="/login">Login</a>
         <a href="/gallery">Gallery</a>
         <a href="/events">Events</a>
