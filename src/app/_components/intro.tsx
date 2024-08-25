@@ -39,6 +39,7 @@ export function Intro() {
       <h2 className="text-5xl font-bold">Emily Yu</h2>
       <div style={{textAlign: "center"}}>
       <div id="nav">
+      <a href="/">Home</a>
         {/* <a href="/login">Login</a> */}
         <a href="/gallery">Gallery</a>
         <a href="/events">Events</a>
@@ -104,17 +105,17 @@ export function Intro() {
       <button className="next" onClick={() => scroll(1)}>&#10095;</button>
     </div>
 
-    <section style={{display:"flex"}}>
+    <section style={{display:"flex", padding: "50px"}}>
       {/* a expand */}
       <Stack>
-            <img src="/assets/me.jpg" alt="Image 1" />
+            <img src="/assets/me.jpg" alt="Image 1" style={{marginBottom: "10px"}}></img>
             <MyAccordion/>
 
           </Stack>
       
 
       {/* info section */}
-      <div style={{padding: "50px", backgroundColor: "lightgrey"}}>
+      <div style={{padding: "75px"}}> {/*, backgroundColor: "lightgrey"}}>*/}
         <p>My badminton journey began at Synergy Badminton Academy in Menlo Park. As an adult, my love for the game has guided me back to a place that I love and to this day, I continue competing while giving back to the community I love. </p>
         <p>I started taking photos in my spare time at tournaments while competing but it quickly grew into something more than that. Since then, I’ve worked with USAB events and shot for  10+ tournaments across the States, from the Bay Badminton Championships in Milpitas, CA to the Riaan New Jersey Open in New Jersey, NJ.</p>
         <h3>“It may be a hobby for you, but it is memories for us.”</h3>
