@@ -10,7 +10,7 @@ import { useRef } from "react";
 import Stack from '@mui/material/Stack';
 
 
-export function Intro() {
+export function Events() {
 
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -47,72 +47,6 @@ export function Intro() {
         </div>
         </section>
     
-{/* 
-    <section style={{backgroundColor:"lightblue", marginTop: "50px", marginBottom: "50px"}}>
-      <h1>image gallery here</h1>
-    </section> */}
-    
-    {/* <section>
-
-    </section>
-    <section className="back">
-    <div className="main-container">
-        <div className="topcorner-absolute">
-          <p>Bay Badminton Championships</p>
-          <p>USAB Sanctioned Event</p>
-          <p>Bay Badminton Center | Milpitas, CA</p>
-        </div>
-        <div id="icons-container">
-            <div className="single-icon-container" id="one">
-            <Image width={400} height={500} src="/assets/middle1.png" alt=""/>
-            </div>
-            <div className="single-icon-container" id="two">
-            <Image width={900} height={500} src="/assets/middle2.jpg" alt=""/>
-            </div>
-            <div className="single-icon-container" id="three">
-            <Image width={600} height={500} src="/assets/middle3.jpg" alt=""/>
-            </div>
-        </div>
-        <div className="botcorner-absolute">
-          <p>Riaan New Jersey Open</p>
-          <p>USAB Sanctioned Event</p>
-          <p>New Jersey Badminton Club | Montville, NJ</p>
-        </div>
-    </div>
-    </section>
-
-    <section>
-
-    </section> */}
-   <div className="image-slider">
-      <button className="prev" onClick={() => scroll(-1)}>&#10094;</button>
-      <div className="wrapper">
-        <div className="image-container" ref={containerRef}>
-          <div className="image">
-            <img src="/assets/middle1.png" alt="Image 1" />
-          </div>
-          <div className="image">
-            <img src="/assets/middle2.jpg" alt="Image 2" />
-          </div>
-          <div className="image">
-            <img src="/assets/middle3.jpg" alt="Image 3" />
-          </div>
-          <div className="image">
-            <img src="/assets/middle3.jpg" alt="Image 3" />
-          </div>
-          <div className="image">
-            <img src="/assets/middle3.jpg" alt="Image 3" />
-          </div>
-          <div className="image">
-            <img src="/assets/middle3.jpg" alt="Image 3" />
-          </div>
-          {/* Add more images here */}
-        </div>
-      </div>
-      <button className="next" onClick={() => scroll(1)}>&#10095;</button>
-    </div>
-
-
     <section style={{display:"flex"}}>
       {/* a expand */}
       <Stack>

@@ -26,7 +26,7 @@ export default function Index() {
           excerpt={heroPost.excerpt}
         />
         {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
-        <RiaanOpen/>
+        {/* <Events/> */}
       </Container>
     </main>
   );
