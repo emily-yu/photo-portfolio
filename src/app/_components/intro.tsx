@@ -9,6 +9,7 @@ import { useRef } from "react";
 // src/app/_components/ui/apple-cards-carousel.tsx
 import Stack from '@mui/material/Stack';
 
+import { Blockquote } from "flowbite-react";
 
 export function Intro() {
 
@@ -116,16 +117,31 @@ export function Intro() {
 
       {/* info section */}
       <Stack id="aboutMe" className="gallerycontainer"> {/*, backgroundColor: "lightgrey"}}>*/}
-        <p>My badminton journey began at Synergy Badminton Academy in Menlo Park. As an adult, my love for the game has guided me back to a place that I love and to this day, I continue competing while giving back to the community I love. </p>
+        <p style={{paddingBottom: "10px"}}>My badminton journey began at Synergy Badminton Academy in Menlo Park. As an adult, my love for the game has guided me back to a place that I love and to this day, I continue competing while giving back to the community I love. </p>
         <p>I started taking photos in my spare time at tournaments while competing but it quickly grew into something more than that. Since then, I’ve worked with USAB events and shot for  10+ tournaments across the States, from the Bay Badminton Championships in Milpitas, CA to the Riaan New Jersey Open in New Jersey, NJ.</p>
       {/* </div>
       <div> */}
-        <p className="quote">“It may be a hobby for you, but it is memories for us.”</p>
+      <Blockquote>
+      <svg
+        className="mb-4 h-8 w-8 text-gray-400 dark:text-gray-600"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 18 14"
+      >
+        <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+      </svg>
+      It may just be a hobby for you, but it is memories for us.
+    </Blockquote>
+        {/* <p className="quote">“It may be a hobby for you, but it is memories for us.”</p> */}
 
-        <p>If you’re running a tournament, I’d love to work with you to capture your moments.</p>
-        <p>I look forward to hearing from you - for projects, for feedback, or even just to talk badminton.</p>
-        <p>emilyyu1030[at]gmail[dot]com</p>
-        <p>Portfolio @ Facebook / Contact @ Instagram </p>
+        <p style={{paddingTop: "20px", paddingBottom: "20px"}}>If you’re running a tournament, I’d love to work with you to capture your moments. I look forward to hearing from you - for projects, for feedback, or even just to talk badminton.</p>
+        {/* <Blockquote>
+        emilyyu1030[at]gmail[dot]com
+    </Blockquote> */}
+        
+        {/* <p>emilyyu1030[at]gmail[dot]com</p>
+        <p>Portfolio @ Facebook / Contact @ Instagram </p> */}
       </Stack>
     </section>
 

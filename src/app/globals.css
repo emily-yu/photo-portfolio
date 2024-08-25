@@ -68,6 +68,9 @@
       }
 }
 
+* {
+  transition: ease all .5s;
+}
 .image-stack {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -114,6 +117,7 @@
     /* .img-circle{ */
       /* height: 100px; */
       /* max-width: 100px; */
+      max-height: 300px;
       border-radius: 10%;
       object-fit: cover;
    /* } */
@@ -294,6 +298,7 @@ p + p {
 }
 .quote {
   font-size: 23px;
+  font-style: italic;
 }
 
 p {
