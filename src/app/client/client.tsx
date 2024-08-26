@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
-import { Label } from "../label";
-import { Input } from "../input";
+import { Label } from "../components/label";
+import { Input } from "../components/input";
 import { cn } from "@/lib/utils";
 import {
   IconBrandGithub,
   IconBrandGoogle,
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
-import { Header } from "../header";
+import { Header } from "../components/header";
 export function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

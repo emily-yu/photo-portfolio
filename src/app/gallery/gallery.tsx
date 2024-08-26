@@ -1,6 +1,6 @@
 "use client";
-import { ParallaxScroll } from "../ui/parallax-scroll";
-import { Header } from "../header";
+import { ParallaxScroll } from "../components/ui/parallax-scroll";
+import { Header } from "../components/header";
 
 interface QuoteProps {
   text: String

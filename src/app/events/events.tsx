@@ -2,12 +2,12 @@
 
 import classNames from "classnames";
 import Image from 'next/image'
-import { Carousel, Card } from "../ui/apple-cards-carousel";
-import MyAccordion from "../ui/mui-accordion";
+import { Carousel, Card } from "../components/ui/apple-cards-carousel";
+import MyAccordion from "../components/ui/mui-accordion";
 import { useRef } from "react";
 import Stack from '@mui/material/Stack';
 import { Blockquote } from "flowbite-react";
-import { Header } from "../header";
+import { Header } from "../components/header";
 
 export function Events() {
 

@@ -1,5 +1,5 @@
 import Container from "@/app/components/container";
-import { Events } from "@/app/components/page/events";
+import { Events } from "@/app/events/events";
 
 export default function Index() {
   
