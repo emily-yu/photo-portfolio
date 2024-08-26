@@ -16,7 +16,7 @@ export const FatQuote = ({ text }: { text: String }) => {
       </svg>
       {text}
     </Blockquote>
-);
-}
+  );
+};
 
 export default FatQuote;

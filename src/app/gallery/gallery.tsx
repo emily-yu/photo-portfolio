@@ -3,7 +3,7 @@ import { ParallaxScroll } from "../components/ui/parallax-scroll";
 import { Header } from "../components/header";
 
 interface QuoteProps {
-  text: String
+  text: String;
 }
 export function Gallery() {
   const images = [
@@ -18,11 +18,11 @@ export function Gallery() {
     "/assets/head/6.jpg",
     "/assets/head/7.jpg",
     "/assets/head/8.jpg",
-];
+  ];
   return (
     <>
-    <Header/>
-        <ParallaxScroll images={images} />   
-        </>
-);
+      <Header />
+      <ParallaxScroll images={images} />
+    </>
+  );
 }

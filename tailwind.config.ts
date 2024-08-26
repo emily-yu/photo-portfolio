@@ -7,12 +7,12 @@ import flowbite from "flowbite-react/tailwind";
 const config: Config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
     flowbite.content(),
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -107,15 +107,15 @@ const config: Config = {
     },
   },
   // plugins: [],
-  plugins: [addVariablesForColors,     flowbite.plugin()  ],
+  plugins: [addVariablesForColors, flowbite.plugin()],
   // plugins: [require("tailwindcss-animate")],
 };
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
   );
- 
+
   addBase({
     ":root": newVars,
   });

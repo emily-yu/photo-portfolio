@@ -1,31 +1,33 @@
 "use client";
 
 import classNames from "classnames";
-import Image from 'next/image'
+import Image from "next/image";
 import { Carousel, Card } from "../components/ui/apple-cards-carousel";
 import MyAccordion from "../components/ui/mui-accordion";
 import { useRef } from "react";
-import Stack from '@mui/material/Stack';
+import Stack from "@mui/material/Stack";
 import { Blockquote } from "flowbite-react";
 import { Header } from "../components/header";
 
 export function Events() {
-
   const containerRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: number) => {
     if (containerRef.current) {
       // Find the first image to get its width
-      const firstImage = containerRef.current.querySelector('.image');
+      const firstImage = containerRef.current.querySelector(".image");
       if (firstImage) {
         const imageWidth = (firstImage as HTMLDivElement).offsetWidth;
         // Calculate the scroll amount
         const scrollAmount = imageWidth * direction;
-        containerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        containerRef.current.scrollBy({
+          left: scrollAmount,
+          behavior: "smooth",
+        });
       }
     }
   };
-  
+
   const data = [
     {
       category: "Seattle, WA",
@@ -119,14 +121,14 @@ export function Events() {
 
   return (
     <>
-      <Header/>
-      <div className="w-full" style={{marginTop: "-5%", marginBottom: "10%"}}>
+      <Header />
+      <div className="w-full" style={{ marginTop: "-5%", marginBottom: "10%" }}>
         <Carousel items={cards} />
       </div>
     </>
   );
 }
- 
+
 // const DummyContent = () => {
 //   return (
 //     <>
@@ -155,4 +157,3 @@ export function Events() {
 //     </>
 //   );
 // };
- 
