@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
-import { Label } from "./label";
-import { Input } from "./input";
+import { Label } from "./ui/label";
+import { Input } from "./ui/input";
 import { cn } from "@/lib/utils";
 import {
   IconBrandGithub,
   IconBrandGoogle,
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
-
+import { Header } from "../header";
 export function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -16,23 +16,7 @@ export function Contact() {
   };
   return (
     <>
-    <section>
-    <div style={{textAlign: "center", padding: "5%"}}>
-
-      <h2 className="text-5xl font-bold">Emily Yu</h2>
-      <div style={{textAlign: "center"}}>
-      <div id="nav">
-      <a href="/">Home</a>
-        {/* <a href="/login">Login</a> */}
-        <a href="/gallery">Gallery</a>
-        <a href="/events">Events</a>
-        <a href="/contact">Contact</a>
-        </div>
-        <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">As an athlete turned photographer, I see with the players.</h4>
-        </div>
-        </div>
-        </section>
-    
+      <Header/>
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
         <div className="greyout">
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">

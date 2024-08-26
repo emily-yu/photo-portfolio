@@ -1,10 +1,10 @@
-import Footer from "@/app/_components/ui/footer";
+import Footer from "@/app/components/footer";
 // import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
 import { twMerge } from "tailwind-merge";
-import { TracingBeam } from "@/app/_components/ui/tracing-beam";
+import { TracingBeam } from "@/app/components/ui/tracing-beam";
 // import { FloatingNav } from "@/app/_components/floating-navbar";
 
 import "./globals.css";

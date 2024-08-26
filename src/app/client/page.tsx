@@ -1,5 +1,5 @@
-import Container from "@/app/_components/ui/container";
-import { Contact } from "@/app/_components/ui/client";
+import Container from "@/app/components/container";
+import { Contact } from "@/app/components/client";
 
 export default function Index() {
   
