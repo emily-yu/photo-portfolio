@@ -1,5 +1,5 @@
 import Container from "@/app/components/container";
-import { Gallery } from "@/app/components/page/gallery";
+import { Gallery } from "@/app/gallery/gallery";
 
 export default function Index() {
   return (
