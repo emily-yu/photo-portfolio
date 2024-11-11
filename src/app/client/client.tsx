@@ -15,6 +15,14 @@ export function Contact() {
     console.log("Form submitted");
   };
   return (
+    /* 
+    guideline for a status tracker ui: https://www.nngroup.com/articles/status-tracker-progress-update/
+    requirements: 
+       1. progress bar for status (preparing, waiting for payment, shoot in progress, editing, finalizing, delivered)
+       2. payment status and invoice access
+       3. application status updates (a table of updates like in the link)
+       4. will email per update, option to opt in for email updates
+    */
     <>
       <Header />
       <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
