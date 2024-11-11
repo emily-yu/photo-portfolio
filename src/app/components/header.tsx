@@ -7,7 +7,7 @@ export function Header() {
   return (
     <section>
       <div style={{ textAlign: "center", padding: "5%" }}>
-        <h2 className="text-5xl font-bold">Emily Yu</h2>
+        <h1 data-test='header-text' className="text-5xl font-bold">Emily Yu</h1>
         <div style={{ textAlign: "center" }}>
           <div id="nav">
             <a href="/">Home</a>
