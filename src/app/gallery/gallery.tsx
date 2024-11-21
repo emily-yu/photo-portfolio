@@ -1,6 +1,7 @@
 "use client";
 import { ParallaxScroll } from "../components/ui/parallax-scroll";
 import { Header } from "../components/header";
+import { CldImage } from 'next-cloudinary';
 
 interface QuoteProps {
   text: String;
@@ -23,6 +24,14 @@ export function Gallery() {
     <>
       <Header />
       <ParallaxScroll images={images} />
+      <CldImage
+          src="cld-sample-5" // Use this sample image or upload your own via the Media Explorer
+          width="500" // Transform the image: auto-crop to square aspect_ratio
+          height="500"
+          crop={{
+              type: 'auto',
+              source: true
+          }} alt={''}    />
     </>
   );
 }
